@@ -4,6 +4,12 @@ An application to load an image from file and then apply simple filters on a per
 
 This is the C# version of the application with Windows Forms GUI elements.
 
+## Build
+
+Clone the repo and use Visual Studio (Community Edition works fine for me) to open the solution (*.sln) file in the root directory. Should build/run at the push of a button.
+
+It's modeled on a standard Windows productivity application so using it should be pretty straightforward.
+
 ## Inspiration
 
 My younger son came to me and out of the blue asked me if I knew what RGB pixel encoding was. I said I did, and he told me that he had a theory, that if you took the Red, Green and Blue values for each pixel in an image, averaged them, and then set all three values to that average, the result would be the original image in black and white.
