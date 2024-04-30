@@ -10,6 +10,14 @@ Clone the repo and use Visual Studio (Community Edition works fine for me) to op
 
 It's modeled on a standard Windows productivity application so using it should be pretty straightforward.
 
+## Filters
+
+The Black and White filter takes the average of the Red, Green and Blue values for each pixel and sets all three of Red, Green and Blue to that average.
+
+The Invert filter inverts Red, Green and/or Blue by setting each to their original value subtracted from 255. Naturally this filter is its own inverse. I structured its menu to practice the implementation of a sub-menu.
+
+The Scale filter multiplies each of Red, Green and/or Blue by the provided scale factor. I structured this menu to practice dialog boxes, group boxes, check boxes and text boxes. Note that the scaled value is rounded to an integer, and is limited to a max of 255 and a min of 0, so this filter can be lossy.
+
 ## Inspiration
 
 My younger son came to me and out of the blue asked me if I knew what RGB pixel encoding was. I said I did, and he told me that he had a theory, that if you took the Red, Green and Blue values for each pixel in an image, averaged them, and then set all three values to that average, the result would be the original image in black and white.
